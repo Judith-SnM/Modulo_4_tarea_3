@@ -24,7 +24,7 @@ class Mascota extends Animal {
         this.enfermedad = enfermedad
     }
     get getnombreMascota() {
-        return `El nombre de la mascota es: ${this.nombre}`;
+        return `El nombre de la mascota es: ${this.nombreMascota}`;
     }
     get getenfermedad() {
         return `y la enfermedad es: ${this.enfermedad}`;
@@ -47,15 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         switch (tipoInput) {
             case "perro":
-                const perro = new Mascota(propietarioInput, telefonoInput, direccionInput, tipoInput, nombreMascotaInput, enfermedadInput);
+                const perro = new Mascota(propietarioInput, direccionInput, telefonoInput, tipoInput, nombreMascotaInput, enfermedadInput);
                 mostrarResultado(perro)
                 break;
             case "gato":
-                const gato = new Mascota(propietarioInput, telefonoInput, direccionInput, tipoInput, nombreMascotaInput, enfermedadInput);
+                const gato = new Mascota(propietarioInput, direccionInput, telefonoInput, tipoInput, nombreMascotaInput, enfermedadInput);
                 mostrarResultado(gato)
                 break;
             case "conejo":
-                const conejo = new Mascota(propietarioInput, telefonoInput, direccionInput, tipoInput, nombreMascotaInput, enfermedadInput);
+                const conejo = new Mascota(propietarioInput, direccionInput, telefonoInput, tipoInput, nombreMascotaInput, enfermedadInput);
                 mostrarResultado(conejo)
                 break;
             default:
